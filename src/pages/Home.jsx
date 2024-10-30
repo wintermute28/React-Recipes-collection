@@ -14,7 +14,10 @@ const Home = () => {
   }, []);
 
   return (
-    <>{catalog.length ? <CaterogyList catalog={catalog} /> : <Preloader />}</>
+    <>
+      <h4>Categories</h4>
+      {catalog.length ? <CaterogyList catalog={catalog} /> : <Preloader />}
+    </>
   );
 };
 

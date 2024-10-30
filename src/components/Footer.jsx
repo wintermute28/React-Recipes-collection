@@ -7,7 +7,7 @@ const Footer = () => {
           <a
             target="_blank"
             className="grey-text text-lighten-4 right"
-            href="https://github.com/wintermute28/Reach-Showcase"
+            href="https://github.com/wintermute28/React-Recipes-collection"
             rel="noreferrer"
           >
             GitHub

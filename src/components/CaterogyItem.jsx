@@ -1,8 +1,7 @@
 import { Link } from "react-router-dom";
 
 const CaterogyItem = (props) => {
-  const { idCategory, strCategory, strCategoryThumb, strCategoryDescription } =
-    props;
+  const { strCategory, strCategoryThumb, strCategoryDescription } = props;
   return (
     <div className="card">
       <div className="card-image">
@@ -17,7 +16,7 @@ const CaterogyItem = (props) => {
         </p>
       </div>
       <div className="card-action">
-        <Link className="btn" to={`/category/${strCategory}`}>
+        <Link className="btn red" to={`/category/${strCategory}`}>
           Watch category
         </Link>
       </div>

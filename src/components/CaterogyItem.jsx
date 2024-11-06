@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 
 const CaterogyItem = (props) => {
   const { strCategory, strCategoryThumb, strCategoryDescription } = props;
+
   return (
     <div className="card">
       <div className="card-image">
@@ -16,7 +17,12 @@ const CaterogyItem = (props) => {
         </p>
       </div>
       <div className="card-action">
-        <Link className="btn red" to={`/category/${strCategory}`}>
+        <Link
+          className="btn red"
+          title="Go to category"
+          aria-label="Go to category"
+          to={`/category/${strCategory}`}
+        >
           Watch category
         </Link>
       </div>

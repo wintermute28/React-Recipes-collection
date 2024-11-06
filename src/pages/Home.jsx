@@ -15,7 +15,7 @@ const Home = () => {
 
   return (
     <>
-      <h4>Categories</h4>
+      <h4 style={{ textAlign: "center" }}>Categories</h4>
       {catalog.length ? <CaterogyList catalog={catalog} /> : <Preloader />}
     </>
   );

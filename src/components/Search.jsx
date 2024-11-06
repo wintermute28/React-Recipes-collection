@@ -33,15 +33,19 @@ const Search = ({ cb = Function.prototype }) => {
           className="btn red"
           style={{ position: "absolute", top: 0, right: "60px" }}
           onClick={handleSubmit}
+          aria-label="Search"
+          title="Search"
         >
-          <i class="large material-icons">search</i>
+          <i className="large material-icons">search</i>
         </button>
         <button
           className="btn red"
           style={{ position: "absolute", top: 0, right: 0 }}
           onClick={handleClear}
+          aria-label="Clear"
+          title="Clear"
         >
-          <i class="large material-icons">clear</i>
+          <i className="large material-icons">clear</i>
         </button>
       </div>
     </div>

@@ -13,6 +13,11 @@ const Search = ({ cb = Function.prototype }) => {
     cb(value);
   };
 
+  const handleClear = () => {
+    setValue("");
+    cb("");
+  };
+
   return (
     <div className="row">
       <div className="input-field col s12">
@@ -26,10 +31,17 @@ const Search = ({ cb = Function.prototype }) => {
         />
         <button
           className="btn red"
-          style={{ position: "absolute", top: 0, right: 0 }}
+          style={{ position: "absolute", top: 0, right: "60px" }}
           onClick={handleSubmit}
         >
-          Search
+          <i class="large material-icons">search</i>
+        </button>
+        <button
+          className="btn red"
+          style={{ position: "absolute", top: 0, right: 0 }}
+          onClick={handleClear}
+        >
+          <i class="large material-icons">clear</i>
         </button>
       </div>
     </div>

@@ -18,6 +18,11 @@ const About = () => {
         website has a responsive design, ensuring convenient access from any
         device. Bon Appétit!
       </p>
+      <img
+        style={{ display: "block", margin: "0 auto" }}
+        src="https://www.themealdb.com/images/meal-icon.png"
+        alt=""
+      />
     </div>
   );
 };

@@ -51,3 +51,9 @@ iframe {
   width: 600px;
   height: 350px;
 }
+
+@media screen and (max-width: 350px) {
+  nav .brand-logo {
+    font-size: 1.8rem;
+  }
+}

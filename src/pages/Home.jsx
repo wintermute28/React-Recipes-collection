@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
+import { Helmet } from "react-helmet";
 import { getAllCategories } from "../api";
 import Preloader from "../components/Preloader";
 import CaterogyList from "../components/CaterogyList";
@@ -41,6 +42,11 @@ const Home = () => {
 
   return (
     <>
+      <Helmet>
+        <title>React Recipes collection</title>
+        <meta name="description" content="React Recipes collection" />
+        <meta name="keywords" content="Recipes collection on React" />
+      </Helmet>
       <Search cb={handleSearch} />
       <h4 style={{ textAlign: "center" }}>Categories</h4>
       {catalog.length ? (

@@ -1,3 +1,5 @@
+import { Helmet } from "react-helmet";
+
 import { useEffect, useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import { getFilteredCategory } from "../api";
@@ -17,6 +19,11 @@ const Category = () => {
   }, [name]);
   return (
     <>
+      <Helmet>
+        <title>{name}</title>
+        <meta name="description" content={name} />
+        <meta name="keywords" content={`${name}, recipes`} />
+      </Helmet>
       <h4 style={{ textAlign: "center" }}>{name}</h4>
       <button
         onClick={goBack}

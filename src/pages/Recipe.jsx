@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
+import { Helmet } from "react-helmet";
 import { getMealById } from "../api";
 import Preloader from "../components/Preloader";
 
@@ -17,6 +18,11 @@ const Recipe = () => {
 
   return (
     <>
+      <Helmet>
+        <title>{recipe.strMeal}</title>
+        <meta name="description" content={recipe.strMeal} />
+        <meta name="keywords" content={`${recipe.strMeal} recipe`} />
+      </Helmet>
       <button
         onClick={goBack}
         title="Go Back"
